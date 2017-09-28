@@ -61,8 +61,7 @@ $(document).ready(function() {
     });
 
     $(".player1").change(function() {
-        $(".left_player").css("background-image", 'url(' + "images/donatello.png" + ')');
-
+        $(".left_player").css("background-image", "url('" + $(this).val() + "')");
     });
     $(".player2").change(function() {
         $(".right_player").css("background-image", "url('" + $(this).val() + "')");
